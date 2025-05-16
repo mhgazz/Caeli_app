@@ -7,6 +7,8 @@ pip install pytz
 
 from flask import Flask
 from NASA_transeiver import NASA_transeiver
+import os
+os.environ['REQUESTS_CA_BUNDLE'] = '/Caeli_app/nasa_ca.pem'
 
 # Flask constructor takes the name of 
 # current module (__name__) as argument.
@@ -38,6 +40,7 @@ def efemerides_now():
 
 # main driver function
 if __name__ == '__main__':
+    os.environ['REQUESTS_CA_BUNDLE'] = '/Caeli_app/nasa_ca.pem'
     # run() method of Flask class runs the application 
     # on the local development server.
     app.run(host='0.0.0.0', port=5000)
