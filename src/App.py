@@ -8,7 +8,7 @@ pip install pytz
 from flask import Flask
 from NASA_transeiver import NASA_transeiver
 import os
-os.environ['REQUESTS_CA_BUNDLE'] = '/Caeli_app/nasa_ca.pem'
+#os.environ['REQUESTS_CA_BUNDLE'] = '/Caeli_app/nasa_ca.pem'
 
 # Flask constructor takes the name of 
 # current module (__name__) as argument.

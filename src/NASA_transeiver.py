@@ -3,7 +3,7 @@ from skyfield.api import load
 from datetime import datetime
 import pytz
 import os
-os.environ['REQUESTS_CA_BUNDLE'] = '/Caeli_app/nasa_ca.pem'
+#os.environ['REQUESTS_CA_BUNDLE'] = '/Caeli_app/nasa_ca.pem'
 
 """ 
 paso previo:
